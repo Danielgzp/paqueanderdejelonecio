@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Caracters from '../components/Caracters'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -13,11 +14,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          CHUPALO ANDER <a href="https://nextjs.org"></a>
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
+          Docker + Nextjs
           <code className={styles.code}>pages/index.js</code>
         </p>
 
@@ -50,6 +51,8 @@ export default function Home() {
             </p>
           </a>
         </div>
+        <h2>Caracters</h2>
+        <Caracters />
       </main>
 
       <footer className={styles.footer}>

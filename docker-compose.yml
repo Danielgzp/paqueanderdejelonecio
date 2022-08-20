@@ -1,0 +1,17 @@
+version: "4"
+
+services:
+  app:
+  image: docker-nextjs
+    ports:
+      - 6969:6969
+    build: .
+    volumes:
+      - ./pages:/app/pages
+      - ./public:/app/public
+      - ./styles:/app/styles
+      # - ./packages/landingpage:/usr/src/app
+      # - /usr/src/app/node_modules
+      # - /usr/src/app/.next
+    env_file:
+      - .env

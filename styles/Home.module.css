@@ -127,3 +127,26 @@
     filter: invert(1);
   }
 }
+
+.containersito{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.cardCaracter{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  
+  transition: color 0.15s ease, border-color 0.15s ease;
+  
+  cursor: pointer;
+}
+.cardCaracter:hover,
+.cardCaracter:focus,
+.cardCaracter:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
